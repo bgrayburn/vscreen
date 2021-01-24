@@ -35,11 +35,6 @@ const makeScreenElement = screen_obj => {
     return el
 }
 
-const removeScreen = id => {
-    document.getElementById(`screen-${id}`).remove()
-
-    screens = screens.filter(s => s.id != id)
-}
 
 const updateScreen = screen => screens[screen.id] = Object.assign(screens[screen.id], screen)
 
@@ -61,7 +56,7 @@ const makeConfigForBackup = (screens) => ({screens})
 
 const storeBackup = screens => {
     const config = makeConfigForBackup(screens)
-    localStorage.setItem('vscreen_config', config)
+    localStorage.setItem('vscreen_config', JSON.stringify(config))
 }
 
 // init event listeners

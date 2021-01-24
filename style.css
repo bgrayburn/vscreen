@@ -27,10 +27,24 @@ body.dark-mode {
   flex-direction: column;
 }
 
+
 #toolbar {
     width: 100%;
     height: 50px;
     flex: 0 1 auto;
+}
+
+.toolbar {
+    background: #666;
+    height: 2rem;
+    top: -2rem;
+    position: relative
+}
+
+.toolbar-button {
+    height: 100%;
+    background: #222;
+    padding: 3px;
 }
 
 #screens {
