@@ -5,6 +5,7 @@ body {
     background: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: crosshair;
 }
 
 body.dark-mode {
@@ -37,14 +38,15 @@ body.dark-mode {
 .toolbar {
     background: #666;
     height: 2rem;
-    top: -2rem;
-    position: relative
+    /* top: -2rem;
+    position: relative */
 }
 
 .toolbar-button {
-    height: 100%;
     background: #222;
     padding: 3px;
+    margin: 5px;
+    display: inline;
 }
 
 #screens {
